@@ -13,5 +13,3 @@ class Book:
             raise ValueError("Author name cannot be empty")
 
         self.authors.append(param)
-
-

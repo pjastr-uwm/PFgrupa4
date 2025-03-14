@@ -22,6 +22,25 @@ class TestBookInitialization(unittest.TestCase):
         book2 = Book("Animal Farm", 112)
         self.assertEqual(book2.calculate_reading_time(), 56)
 
+    def test_add_author(self):
+        book1 = Book("Pride and Prejudice", 432)
+        book1.add_author("Jane Austen")
+        self.assertIn("Jane Austen", book1.authors)
+        book1.add_author("George Orwell")
+        self.assertIn("George Orwell", book1.authors)
+        book1.add_author("Aldous Huxley")
+        self.assertIn("Aldous Huxley", book1.authors)
+        book1.add_author("Ray Bradbury")
+        self.assertIn("Ray Bradbury", book1.authors)
+
+    def test_add_empty_author(self):
+        book1 = Book("Pride and Prejudice", 432)
+        with self.assertRaises(ValueError) as context:
+            book1.add_author("")
+
+        self.assertEqual(str(context.exception), "Author name cannot be empty")
+
+
     def tearDown(self):
         pass
 

@@ -40,7 +40,6 @@ class TestBookInitialization(unittest.TestCase):
 
         self.assertEqual(str(context.exception), "Author name cannot be empty")
 
-
     def tearDown(self):
         pass
 

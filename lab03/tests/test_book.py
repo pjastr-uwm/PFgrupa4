@@ -1,6 +1,7 @@
 import unittest
 from src.book import Book
 
+
 class TestBookInitialization(unittest.TestCase):
 
     def setUp(self):

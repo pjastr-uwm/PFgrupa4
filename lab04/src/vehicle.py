@@ -1,4 +1,4 @@
-class vehicle:
+class Vehicle:
     def __init__(self, brand, model, year):
         self.brand = brand
         self.model = model
@@ -29,7 +29,7 @@ class vehicle:
         print("Current speed:", self._speed)
 
 
-class Car(vehicle):
+class Car(Vehicle):
     def __init__(self, brand, model, year, fuel_type):
         super().__init__(brand, model, year)
         self.fuel_type = fuel_type
@@ -66,7 +66,6 @@ def main():
     car1.display_info()
     default_car = Car.create_default()
     default_car.display_info()
-    unused_var = 123
     Car.maintenance()
 
 

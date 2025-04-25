@@ -91,3 +91,15 @@ def check_discount_error(test_context):
     """Verify the discount error message is received."""
     assert 'error_message' in test_context, "No error was caught in the test"
     assert "Discount must be between 0 and 100" in test_context['error_message']
+
+@when('I calculate the discounted total with tax')
+def calculate_discounted_total_with_tax(cash_register, test_context):
+    """Calculate the total with tax after discount has been applied."""
+    test_context['final_discounted_amount'] = cash_register.calculate_total_with_tax()
+
+
+@then(parsers.parse('the final amount after discount and tax should be {expected:f}'))
+def check_final_discounted_amount(test_context, expected):
+    """Verify the final amount after discount and tax."""
+    assert 'final_discounted_amount' in test_context, "Discounted total with tax was not calculated in the test"
+    assert test_context['final_discounted_amount'] == pytest.approx(expected, 0.01)

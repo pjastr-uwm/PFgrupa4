@@ -123,6 +123,139 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "7cd354c7-75cb-4283-aa77-31b578a9b228",
+    "name": "dropdown",
+    "commands": [{
+      "id": "f58f1d2e-20fb-497c-a737-b5d86d65133c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "370da591-42aa-4c39-8ae3-429201a96e77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1417x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "838beafc-1a9d-4a1f-a1f1-0f255431576d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dropdown",
+      "targets": [
+        ["linkText=Dropdown", "linkText"],
+        ["css=li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dropdown')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dropdown')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dropdown')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf8904e8-5a44-48f4-bc15-229540c15e6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5391757-28a2-43f3-a99a-1e44dda63a28",
+      "comment": "",
+      "command": "select",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "label=Option 1"
+    }, {
+      "id": "ffa20595-a9df-42be-bafc-b3ab78a54a88",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "579df70d-0cdc-477e-aefb-e50de359adea",
+      "comment": "",
+      "command": "verifySelectedValue",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "26178359-298d-4aa9-9333-f66fb7676c11",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "0a6806d9-83dc-4414-b51b-eb35893a299c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown",
+      "targets": [
+        ["id=dropdown", "id"],
+        ["css=#dropdown", "css:finder"],
+        ["xpath=//select[@id='dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ea50eba-7aa8-4c7e-8f4b-ed4abc301624",
+      "comment": "",
+      "command": "select",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "label=Option 2"
+    }, {
+      "id": "b999d741-e996-47f6-9e23-9bd7bdc520e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='dropdown']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Option 2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43824be8-3ff1-460a-9b3d-c94148efb666",
+      "comment": "",
+      "command": "verifySelectedValue",
+      "target": "id=dropdown",
+      "targets": [],
+      "value": "2"
+    }, {
+      "id": "c091837c-0b9e-4312-886c-09f770859b23",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "5e54c14d-a6dc-45a8-a3cf-bf4ac21cf2b0",

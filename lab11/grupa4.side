@@ -401,6 +401,104 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "2f8f2033-86d4-469b-aa6d-52e893875086",
+    "name": "tabele",
+    "commands": [{
+      "id": "d63c0333-c914-4b90-900b-f0957cd59684",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d865434a-8ec9-432d-b383-bfb124aa7ccd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1417x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44b8fb35-c043-4a94-9170-a97f561a50b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sortable Data Tables",
+      "targets": [
+        ["linkText=Sortable Data Tables", "linkText"],
+        ["css=li:nth-child(41) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sortable Data Tables')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[41]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/tables')]", "xpath:href"],
+        ["xpath=//li[41]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sortable Data Tables')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "620e839a-2516-4ad4-b36d-a972a4d96cd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#table1 > tbody > tr:nth-child(1)",
+      "targets": [
+        ["css=#table1 > tbody > tr:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='table1']/tbody/tr", "xpath:idRelative"],
+        ["xpath=//tbody/tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f940bc79-6d8f-47ef-866d-147b459f55a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#table1 tr:nth-child(1) > td:nth-child(5)",
+      "targets": [
+        ["css=#table1 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table1']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'http://www.jsmith.com')]", "xpath:innerText"]
+      ],
+      "value": "http://www.jsmith.com"
+    }, {
+      "id": "b0d35144-1284-44a5-8de0-1016b5dd6833",
+      "comment": "",
+      "command": "click",
+      "target": "css=#table1 .header:nth-child(1) > span",
+      "targets": [
+        ["css=#table1 .header:nth-child(1) > span", "css:finder"],
+        ["xpath=//table[@id='table1']/thead/tr/th/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Last Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adf56a22-fe54-468e-a76d-d317a4dc6fe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#table1 > tbody > tr:nth-child(1)",
+      "targets": [
+        ["css=#table1 > tbody > tr:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='table1']/tbody/tr", "xpath:idRelative"],
+        ["xpath=//tbody/tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "688044af-1e64-4a46-acb0-e74e21dd0cfa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#table1 tr:nth-child(1) > td:nth-child(5)",
+      "targets": [
+        ["css=#table1 tr:nth-child(1) > td:nth-child(5)", "css:finder"],
+        ["xpath=//table[@id='table1']/tbody/tr/td[5]", "xpath:idRelative"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'http://www.frank.com')]", "xpath:innerText"]
+      ],
+      "value": "http://www.frank.com"
+    }, {
+      "id": "e7d865fb-6b6f-4eba-825e-bb22fb626444",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "5e54c14d-a6dc-45a8-a3cf-bf4ac21cf2b0",

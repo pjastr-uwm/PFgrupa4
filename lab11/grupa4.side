@@ -256,6 +256,151 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "0eb9e70b-2136-4d0c-bc0f-0681dc81ab6f",
+    "name": "pola wyboru",
+    "commands": [{
+      "id": "9ad5cd51-9655-495e-bc45-46085326813e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98bbb215-35b1-4dbe-84d8-74825d5f27a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1417x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0f770e6-a945-416b-a55e-54473cb3371d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkboxes",
+      "targets": [
+        ["linkText=Checkboxes", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkboxes')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkboxes')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkboxes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d49802a-3958-4df9-b8cd-7be195d3c0c4",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//form[@id='checkboxes']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4607736-2697-4511-91a0-d9a7e5e3035d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8b0ff809-6ed9-48a0-9a86-0c4383ab02f0",
+    "name": "zmiana okien",
+    "commands": [{
+      "id": "a1a9aea3-3597-430e-ba54-ff83d92dc404",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bd27646-2d98-4b27-b41a-896069efaf9d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1417x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb7d0c10-e813-4300-98f4-10c4c1be3f6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Multiple Windows",
+      "targets": [
+        ["linkText=Multiple Windows", "linkText"],
+        ["css=li:nth-child(33) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Multiple Windows')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[33]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/windows')]", "xpath:href"],
+        ["xpath=//li[33]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Multiple Windows')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a627061-ef90-429b-8555-97a6d1164276",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click Here",
+      "targets": [
+        ["linkText=Click Here", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Click Here')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/windows/new')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click Here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3006",
+      "windowTimeout": 2000
+    }, {
+      "id": "e9517b7f-347e-4c4a-ac11-f9a370a6afe1",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acee36fb-bab1-410f-bc77-170f83f5fc19",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3006}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d963ab2e-d575-4b47-b54a-45f413838abc",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb518d12-2be3-4c18-9b2f-9ca18b4c4e7b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a9aae0-7b6c-4051-b016-a7d57e569ee2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3006}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6134816d-f120-4979-987a-8fbd307cab08",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "5e54c14d-a6dc-45a8-a3cf-bf4ac21cf2b0",
